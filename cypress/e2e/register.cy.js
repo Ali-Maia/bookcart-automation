@@ -1,17 +1,20 @@
 import { gerarUsuario } from "../support/fakerHelper";
 import RegisterPage from "../support/register/pagina-register";
 
-describe('', () => {
+describe('Validar o funcionamento da tela de registro', () => {
 
   const register = new RegisterPage();
   const usuario = gerarUsuario();
 
-  it('', () => {
+  beforeEach(() => {
+    register.acessarPaginaRegister();
+  });
+
+  it('Registro com dados válidos', () => {
 
     cy.intercept('GET', '/api/user/validateUserName/*').as('validateUsername')
     cy.intercept('POST', '/api/user/').as('registerUser')
 
-    register.acessarPaginaRegister();
     register.preencherFirstName(usuario.firstName);
     register.preencherLastName(usuario.lastName);
     register.preencherUserName(usuario.username);
@@ -35,6 +38,18 @@ describe('', () => {
 
     register.validarRegistroComSucesso();
       
+  });
+
+  it.only('Registro com campo First Name em branco', () => {
+
+    register.preencherLastName(usuario.lastName);
+    register.preencherUserName(usuario.username);
+    register.preencherPassword(usuario.password);
+    register.preencherPasswordConfirm(usuario.confirmPassword);
+    register.preencherGender(usuario.gender);
+    register.clicarRegister();
+    register.varificarFalhaFirstName();
+
   });
   
 });

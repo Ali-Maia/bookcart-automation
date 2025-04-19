@@ -8,6 +8,7 @@ export const ELEMENTS = {
   genderInput: (gender) => `input[type="radio"][value="${gender}"]`,
   registerButton: ['button', 'Register'],
   successMessage: ['.mdc-snackbar__surface','Registration successful'],
+  failedFirstName: ['.ng-tns-c508571215-1','First name'],
 
   loginButton : ['button', 'Login'], // tem esse elemento na tela, mas n sei se precisa dele
 
