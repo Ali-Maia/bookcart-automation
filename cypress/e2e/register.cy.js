@@ -40,7 +40,7 @@ describe('Validar o funcionamento da tela de registro', () => {
       
   });
 
-  it.only('Registro com campo First Name em branco', () => {
+  it('Registro com campo First Name em branco', () => {
 
     register.preencherLastName(usuario.lastName);
     register.preencherUserName(usuario.username);
@@ -48,7 +48,20 @@ describe('Validar o funcionamento da tela de registro', () => {
     register.preencherPasswordConfirm(usuario.confirmPassword);
     register.preencherGender(usuario.gender);
     register.clicarRegister();
-    register.varificarFalhaFirstName();
+    register.verificarFalhaFirstName();
+
+  });
+
+  it('Registro com senha fraca', () => {
+
+    register.preencherFirstName(usuario.firstName);
+    register.preencherLastName(usuario.lastName);
+    register.preencherUserName(usuario.username);
+    register.preencherPassword(usuario.firstName);
+    register.preencherPasswordConfirm(usuario.firstName);
+    register.preencherGender(usuario.gender);
+    register.clicarRegister();
+    register.verificarSenhaFraca();
 
   });
   

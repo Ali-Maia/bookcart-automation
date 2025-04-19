@@ -9,6 +9,7 @@ export const ELEMENTS = {
   registerButton: ['button', 'Register'],
   successMessage: ['.mdc-snackbar__surface','Registration successful'],
   failedFirstName: ['.ng-tns-c508571215-1','First name'],
+  failedMessagePassword: '#mat-mdc-error-0',
 
   loginButton : ['button', 'Login'], // tem esse elemento na tela, mas n sei se precisa dele
 

@@ -38,8 +38,12 @@ class RegisterPage {
     cy.get(ELEMENTS.successMessage[0]).contains(ELEMENTS.successMessage[1]).should('be.visible');
   }
 
-  varificarFalhaFirstName(){
+  verificarFalhaFirstName(){
     cy.contains(ELEMENTS.failedFirstName[0], ELEMENTS.failedFirstName[1]).invoke('css', 'color').should('equal', 'rgb(244, 67, 54)');
+  }
+
+  verificarSenhaFraca(){
+    cy.get(ELEMENTS.failedMessagePassword).should('be.visible');
   }
 
 }
