@@ -4,6 +4,10 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-In%20Development-yellow)
 
+<p align="center">
+  <img alt="projeto Habits" src=".github/preview.jpg" width="100%">
+</p>
+
 Este repositório contém o projeto de automação de testes end-to-end para a aplicação [BookCart](https://bookcart.azurewebsites.net/), utilizando **Cypress** como ferramenta principal de automação.
 
 ## 📚 Sobre o Projeto
