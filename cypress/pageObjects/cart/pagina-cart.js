@@ -1,11 +1,6 @@
 import { SELECTORS } from "./elements";
 
 export class CartPage {
-
-    acessarHome() {
-        cy.log("ACESSANDO A TELA PRINCIPAL");
-        cy.visit('https://bookcart.azurewebsites.net/');
-      }
     
     adicionarLivro() {
         cy.get(SELECTORS.addCartButton[0]) // Elementos do carringo estão nessa classe
