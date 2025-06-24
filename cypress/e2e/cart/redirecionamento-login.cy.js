@@ -1,5 +1,5 @@
      
-  import { CartPage } from '../../support/cart/pagina-cart';
+  import { CartPage } from '../../pageObjects/cart/pagina-cart';
 
 describe('CN002: Cenário de Exceção - Redirecionamento ao Login ao Finalizar Compra com Itens no Carrinho ', () => {
     const cartPage = new CartPage()

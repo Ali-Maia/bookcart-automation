@@ -1,4 +1,4 @@
-import LoginPage from '../support/login/pagina-login';
+import LoginPage from '../pageObjects/login/pagina-login';
 
 describe('Validar o funcionamento da tela de login', () => {
 

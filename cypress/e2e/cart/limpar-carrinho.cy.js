@@ -1,5 +1,5 @@
      
-import { CartPage } from '../../support/cart/pagina-cart';
+import { CartPage } from '../../pageObjects/cart/pagina-cart';
 
 describe('CN003: Fluxo Alternativo - Limpar Carrinho Antes da Compra', () => {
     const cartPage = new CartPage()

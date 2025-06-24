@@ -1,5 +1,5 @@
 import { gerarUsuario } from "../support/fakerHelper";
-import RegisterPage from "../support/register/pagina-register";
+import RegisterPage from "../pageObjects/register/pagina-register";
 
 describe('Validar o funcionamento da tela de registro', () => {
 

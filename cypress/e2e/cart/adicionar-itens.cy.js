@@ -1,5 +1,5 @@
      
-  import { CartPage } from '../../support/cart/pagina-cart';
+  import { CartPage } from '../../pageObjects/cart/pagina-cart';
   
   describe('CN001: Fluxo Principal - Adição de item ao carrinho', () => {
     const cartPage = new CartPage()
