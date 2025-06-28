@@ -19,6 +19,8 @@ O objetivo deste projeto é automatizar os principais fluxos do e-commerce BookC
 - [Cypress](https://www.cypress.io/) - Framework de automação de testes
 - JavaScript
 - Page Object Model (POM) - Padrão de organização de código para testes
+- [Fakerjs](https://fakerjs.dev/) - Biblioteca para geração de dados
+- [Mochawesome](https://www.npmjs.com/package/mochawesome) - Geração de relatórios HTML
 
 ## 📄 Estrutura do Projeto
 
@@ -74,6 +76,7 @@ npx cypress run
 - Login de usuário
 - Adicionar livros ao carrinho
 - Fluxo completo de compra
+- Filtro de categoria
 
 ## 🌪️ Exemplo de Teste
 
